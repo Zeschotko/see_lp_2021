@@ -1,4 +1,4 @@
-# tha-lp-vigo
+# Base Vue.js 2019
 
 ## Project setup
 ```
