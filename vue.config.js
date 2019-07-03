@@ -7,7 +7,7 @@ module.exports = {
 		'style-resources-loader': {
 			preProcessor: 'stylus',
 			patterns: [
-				'/Projetos/SITE/_frameworks/base_vue_2019/src/assets/stylus/_util.styl'
+				path.resolve(__dirname, 'src/assets/stylus/_util.styl')
 			]
 		}
 	}
