@@ -15,7 +15,7 @@ generateTemplateFiles([{
 			pathAndFileNameDefaultCase: '(pascalCase)',
 		},
 		onComplete: (results) => {
-			console.log(`results`, results);
+			console.log(`Component criado com sucesso!`);
 		}
 	},
 	{
@@ -30,7 +30,7 @@ generateTemplateFiles([{
 			pathAndFileNameDefaultCase: '(pascalCase)',
 		},
 		onComplete: (results) => {
-			console.log(`results`, results);
+			console.log(`View criada com sucesso!`);
 		}
 	},
 	{
@@ -45,7 +45,7 @@ generateTemplateFiles([{
 			pathAndFileNameDefaultCase: '(pascalCase)',
 		},
 		onComplete: (results) => {
-			console.log(`results`, results);
+			console.log(`Section criada com sucesso!`);
 		}
 	}
 ]);

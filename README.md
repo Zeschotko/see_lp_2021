@@ -15,6 +15,12 @@ npm run serve
 npm run build
 ```
 
+## Create components of Vue.js
+This command offers the possibility of create standalone components, views or sections
+```
+npm run create:component
+```
+
 ### Run your tests
 ```
 npm run test

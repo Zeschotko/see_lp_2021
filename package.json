@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint",
     "prod": "echo Prefira utilizar \"npm run build\" && npm run build",
     "watch": "echo Prefira utilizar \"npm run serve\" && npm run serve",
-    "create": "node ./tools/generate/generate.js"
+    "create:component": "node ./tools/createComponent/createComponent.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
