@@ -4,7 +4,7 @@
 $font-size              = 16px;
 $base_width             = 1920px;
 $base_height            = 1080px;
-$content-width          = 1280px;
+$content-width          = 1240px;
 $supported-resolutions  = 2560 1920 1680 1600 1440 1366 1280 1024 768 600 375 340 320;
 
 // Font Weights
@@ -63,6 +63,10 @@ vh(valor)
 clearfix()
     &:after
         content ''; display table; clear both;
+
+// Converte valor do Adobe PS em EM
+letterSpacing($tracking)
+    ($tracking / 1000 ) * 1em;
 
 // Media query geral
 media(constraint, tamanho = 0, orient = '')
