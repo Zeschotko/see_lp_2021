@@ -1,13 +1,14 @@
 {
   "name": "base-vue-2019",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "prod": "echo Prefira utilizar \"npm run build\" && npm run build",
-    "watch": "echo Prefira utilizar \"npm run serve\" && npm run serve"
+    "watch": "echo Prefira utilizar \"npm run serve\" && npm run serve",
+    "create": "node ./tools/generate/generate.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -22,6 +23,7 @@
     "css-mqpacker": "^7.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "generate-template-files": "^2.2.0",
     "normalize-styl": "^4.1.1",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
