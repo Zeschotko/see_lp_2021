@@ -39,4 +39,4 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped src="@lib/EtoButton/EtoButton.styl"></style>
+<style lang="stylus" scoped src="@lib/etoolsComponents/formulario/EtoButton/EtoButton.styl"></style>
