@@ -1,0 +1,48 @@
+// EtoInput
+
+.input
+    position relative; margin-bottom 15px; padding 0 15px; width 100%;
+
+    label
+        position absolute; left 15px; top 50%; transform translateY(-50%); transition all .2s ease-in-out; font-size rem(16);
+        transform-origin top left; line-height rem(16)
+
+        &.ativo
+            transform translateY(-25px); font-size rem(12); line-height rem(12);
+
+    input
+        background none; border none; border-bottom 1px solid #b7b4b0; outline 0; transition all .2s ease-in-out;
+        height 50px; display block; width 100%; font-size rem(16); padding-top rem(12);
+        &:focus
+            border-bottom-color red; color red;
+        &:disabled
+            background-color #d1d1d1; cursor not-allowed;
+
+    .message
+        visibility hidden; opacity 0; user-select none; transition all .2s ease-in-out; position: absolute; bottom: 0; font-size: rem(12); 
+        right: 15px; white-space nowrap;
+
+    &.error, &.success
+        .message
+            visibility visible; opacity 1; user-select all;
+
+    &.error
+        input
+            background #FFF2F2; border-bottom-color #973937;
+        .message
+            color: #973937;
+    
+    &.success
+        input
+            background #FCFFF5; border-bottom-color #A8C599;
+        .message
+            color: #1E561F;
+
+    &.search
+        display flex;
+        input
+            width calc(100% - 50px);
+        button
+            width 50px; height 50px; padding 0; margin 0; background none; border none; cursor pointer;
+            .material-icons
+                color #000;
