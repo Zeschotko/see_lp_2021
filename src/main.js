@@ -1,8 +1,8 @@
-import './assets/stylus/main.styl'
+import '@stylus/main.styl'
 
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import { App } from '@/app'
+import router from '@/router'
 
 Vue.config.productionTip = false
 
