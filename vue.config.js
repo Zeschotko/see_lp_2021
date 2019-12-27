@@ -6,7 +6,7 @@ module.exports = {
 		'style-resources-loader': {
 			preProcessor: 'stylus',
 			patterns: [
-				path.resolve(__dirname, 'src/assets/stylus/_util.styl')
+				path.resolve(__dirname, 'src/assets/stylus/_util.styl'),
 			]
 		}
 	},
@@ -18,7 +18,8 @@ module.exports = {
 				"@svgs": path.resolve(__dirname, 'src/assets/svgs'),
 				"@components": path.resolve(__dirname, 'src/components'),
 				"@sections": path.resolve(__dirname, 'src/sections'),
-				"@views": path.resolve(__dirname, 'src/views')
+				"@views": path.resolve(__dirname, 'src/views'),
+				"@templates": path.resolve(__dirname, 'src/templates')
 			}
 		}
 	}

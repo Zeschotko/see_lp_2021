@@ -1,51 +1,15 @@
-const {
-	generateTemplateFiles
-} = require('generate-template-files');
-const path = require('path')
+const { component, section, template, view } = require('./config');
+const { generateTemplateFiles } = require('generate-template-files');
+let args = process.argv.slice(2);
+let configs = [component, section, template, view];
 
-generateTemplateFiles([{
-		option: 'Component',
-		defaultCase: '(pascalCase)',
-		entry: {
-			folderPath: path.resolve(__dirname, 'templates/component/'),
-		},
-		stringReplacers: ['__componentName__'],
-		output: {
-			path: path.resolve(__dirname, '../../src/components/__componentName__(pascalCase)/'),
-			pathAndFileNameDefaultCase: '(pascalCase)',
-		},
-		onComplete: (results) => {
-			console.log(`Component criado com sucesso!`);
-		}
-	},
-	{
-		option: 'View',
-		defaultCase: '(pascalCase)',
-		entry: {
-			folderPath: path.resolve(__dirname, 'templates/component/'),
-		},
-		stringReplacers: ['__componentName__'],
-		output: {
-			path: path.resolve(__dirname, '../../src/views/__componentName__(pascalCase)/'),
-			pathAndFileNameDefaultCase: '(pascalCase)',
-		},
-		onComplete: (results) => {
-			console.log(`View criada com sucesso!`);
-		}
-	},
-	{
-		option: 'Section',
-		defaultCase: '(pascalCase)',
-		entry: {
-			folderPath: path.resolve(__dirname, 'templates/component/'),
-		},
-		stringReplacers: ['__componentName__', '__viewName__'],
-		output: {
-			path: path.resolve(__dirname, '../../src/sections/__viewName__(pascalCase)/__componentName__(pascalCase)'),
-			pathAndFileNameDefaultCase: '(pascalCase)',
-		},
-		onComplete: (results) => {
-			console.log(`Section criada com sucesso!`);
-		}
-	}
-]);
+if (args.length > 0) {
+	args.forEach((arg, index) => {
+		arg = arg.slice(2);
+		arg = arg[0].toUpperCase() + arg.slice(1)
+		args[index] = arg
+	});
+	configs = configs.filter(config => config.option == args[0])
+}
+
+generateTemplateFiles(configs);

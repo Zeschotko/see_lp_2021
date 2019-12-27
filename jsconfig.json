@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@images/*": ["./src/assets/images/*"],
+            "@stylus/*": ["./src/assets/stylus/*"],
+            "@svgs/*": ["./src/assets/svgs/*"],
+            "@components/*": ["./src/components/*"],
+            "@sections/*": ["./src/sections/*"],
+            "@views/*": ["./src/views/*"],
+            "@templates/*": ["./src/templates/*"],
+        }
+    }
+}

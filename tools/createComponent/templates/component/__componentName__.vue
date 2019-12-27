@@ -1,5 +1,6 @@
 <template lang="pug">
-    // __componentName__(sentenceCase)
+    #__componentName__(camelCase)
+        
 </template>
 
 <script>
@@ -8,4 +9,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped src="./__componentName__(pascalCase).styl"></style>
+<style lang="stylus" scoped src="@components/__componentName__(pascalCase).styl"></style>
