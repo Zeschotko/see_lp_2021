@@ -1,11 +1,16 @@
-// Variáveis e Mixins
-@import '_util'
+// Variables, Sizes and Medias
+@require 'lib/variables'
+@require 'lib/sizes'
+@require 'lib/medias'
 
 // Normalize css
 @require '../../../node_modules/normalize-styl'
 
 // Resets gerais não contemplados pelo normalize
-@import '_resets'
+@import 'lib/resets'
 
 // Estilos gerais
-@import '_geral'
+@import 'geral'
+
+// Estilos especificos
+@import 'config'
