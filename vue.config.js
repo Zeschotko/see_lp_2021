@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-	publicPath: "/",
+	publicPath: process.env.VUE_PUBLICPATH ? process.env.VUE_PUBLICPATH : "/",
 	pluginOptions: {
 		'style-resources-loader': {
 			preProcessor: 'stylus',

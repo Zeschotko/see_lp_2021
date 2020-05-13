@@ -9,6 +9,6 @@ export default new Router({
 	routes: [{
 		path: '/',
 		name: 'home',
-		component: () => import( /* webpackChunkName: "home" */ './views/home/Home.vue')
+		component: () => import( /* webpackChunkName: "home" */ './views/Home/Home.vue')
 	}]
 })
