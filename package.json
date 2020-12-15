@@ -5,9 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "staging": "vue-cli-service build --mode staging",
+    "production": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint",
-    "prod": "echo Prefira utilizar \"npm run build\" && npm run build",
-    "watch": "echo Prefira utilizar \"npm run serve\" && npm run serve",
     "create": "node ./tools/createComponent/createComponent.js",
     "create:component": "node ./tools/createComponent/createComponent.js --component",
     "create:section": "node ./tools/createComponent/createComponent.js --section",
