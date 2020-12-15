@@ -5,7 +5,7 @@
 
 <script>
 export default {
-    name: "__componentName__(kebabCase)"
+    name: "template-__componentName__(kebabCase)",
 }
 </script>
 

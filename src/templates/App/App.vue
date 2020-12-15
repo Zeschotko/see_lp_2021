@@ -5,8 +5,8 @@
 
 <script>
 export default {
-    name: "app"
+    name: "template-app",
 }
 </script>
 
-<style lang="stylus" scoped src="@templates/App/App.styl"></style>
+<style lang="stylus" scoped src="./App.styl"></style>

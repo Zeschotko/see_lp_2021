@@ -5,7 +5,7 @@
 
 <script>
 export default {
-    name: "__componentName__(kebabCase)"
+    name: "section-__componentName__(kebabCase)",
 }
 </script>
 

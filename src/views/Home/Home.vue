@@ -5,8 +5,8 @@
 
 <script>
 export default {
-    name: "home"
+    name: "view-home",
 }
 </script>
 
-<style lang="stylus" scoped src="@views/Home/Home.styl"></style>
+<style lang="stylus" scoped src="./Home.styl"></style>
