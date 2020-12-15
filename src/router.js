@@ -3,12 +3,18 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-export default new Router({
-	mode: 'history',
-	base: process.env.BASE_URL,
-	routes: [{
+let routes = [
+	{
 		path: '/',
 		name: 'home',
 		component: () => import( /* webpackChunkName: "home" */ './views/Home/Home.vue')
-	}]
+	},
+]
+
+let router = new Router({
+	mode: 'history',
+	base: process.env.BASE_URL,
+	routes,
 })
+
+export default router

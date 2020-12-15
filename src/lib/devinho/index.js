@@ -43,3 +43,4 @@ class Devinho {
 }
 
 export default new Devinho();
+export const isMobile = new Devinho().isMobile()
