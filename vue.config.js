@@ -9,6 +9,7 @@ module.exports = {
 				path.resolve(__dirname, 'src/assets/stylus/lib/variables.styl'),
 				path.resolve(__dirname, 'src/assets/stylus/lib/sizes.styl'),
 				path.resolve(__dirname, 'src/assets/stylus/lib/medias.styl'),
+				path.resolve(__dirname, 'src/assets/stylus/config.styl'),
 			]
 		}
 	},
