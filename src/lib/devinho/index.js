@@ -16,7 +16,10 @@ class Devinho {
 			addClass: (element, classe) => this.functions.getElement(element).classList.add(classe),
 			removeClass: (element, classe) => this.functions.getElement(element).classList.remove(classe),
 			toggleClass: (element, classe) => this.functions.getElement(element).classList.toggle(classe),
-			isMobile: this.isMobile()
+			isMobile: this.isMobile(),
+			aspectRatio: this.aspectRatio,
+			widthByAspectRatio: this.widthByAspectRatio,
+			heightByAspectRatio: this.heightByAspectRatio,
 		}
 	}
 
@@ -28,6 +31,22 @@ class Devinho {
 				check = true;
 			})(navigator.userAgent||navigator.vendor||window.opera);
 		return check;
+	}
+
+	aspectRatio(originalWidth, originalHeight, size, mode = 'width') {
+		if (mode != 'width' || mode != 'height')
+			mode = 'width'
+		if (mode == 'height')
+			return (originalWidth / originalHeight) * size
+		return (originalHeight / originalWidth) * size
+	}
+	
+	widthByAspectRatio(originalWidth, originalHeight, height) {
+		return this.aspectRatio(originalWidth, originalHeight, height, 'height')
+	}
+
+	heightByAspectRatio(originalWidth, originalHeight, width) {
+		return this.aspectRatio(originalWidth, originalHeight, width, 'width')
 	}
 
 	// eslint-disable-next-line
@@ -44,3 +63,6 @@ class Devinho {
 
 export default new Devinho();
 export const isMobile = new Devinho().isMobile()
+export const aspectRatio = new Devinho().aspectRatio
+export const widthByAspectRatio = new Devinho().widthByAspectRatio
+export const heightByAspectRatio = new Devinho().heightByAspectRatio
