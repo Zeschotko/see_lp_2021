@@ -2,7 +2,7 @@
     section#contato
         h2 Contato
         .container
-            form
+            //- form
                 .group
                     input(id="nome", v-model="form.nome" :class="{'notEmpty': form.nome && form.nome != ''}")
                     label(for="nome" ) Nome Sobrenome
@@ -19,7 +19,7 @@
                     textarea(id="mensagem", v-model="form.mensagem" :class="{'notEmpty': form.mensagem && form.mensagem != ''}")
                     label(for="mensagem") Mensagem
                     span erro
-                button Enviar
+                button(type="submit", v-html="textButton", ref="btnEnviar")
             .infos
                 h4 Telefone e Whatsapp
                 a(href="https://wa.me/11991521367", target="_blank").telefone
@@ -53,8 +53,42 @@ export default {
                 celular: null,
                 mensagem: null
             },
-            errors: []
+            textButton: 'Enviar',
+            errors: {},
+            publicPath: process.env.BASE_URL
         }
+    },
+    methods: {
+        // sendForm() {
+		// 	this.$refs.btnEnviar.setAttribute("disabled", "disabled");
+		// 	this.mensagem = "Enviando";
+		// 	if(this.form.entraremcontato)
+		// 		this.form.contatar = "sim"
+		// 	else
+		// 		this.form.contatar = "não"
+
+		// 	this.$axios.post(`${this.publicPath}send_mail.php`, qs.stringify(this.form))
+		// 		.then(() => {
+		// 			this.mensagem = "Enviado com sucesso!";
+		// 			this.$refs.btnEnviar.removeAttribute("disabled");
+		// 			this.form.nome = "";
+		// 			this.form.email = "";
+		// 			this.form.telefone = "";
+		// 			this.form.entraremcontato = false;
+		// 		})
+		// 		.catch(error => {
+		// 			this.mensagem = "Enviar";
+		// 			if (error.response.status == 422) {
+		// 				this.errors = error.response.data.errors;
+		// 			}
+		// 		})
+		// 		.finally(() => {
+		// 			this.$refs.btnEnviar.removeAttribute("disabled");
+		// 			setTimeout(() => {
+		// 				this.mensagem = "Enviar";
+		// 			}, 4000);
+		// 		});
+		// },
     }
 }
 </script>
