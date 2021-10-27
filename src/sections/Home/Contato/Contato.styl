@@ -1,0 +1,57 @@
+// Contato
+
+#contato
+    padding 70px 20px
+    .container
+        display flex; align-items flex-start; justify-content center; gap vh(150); flex-flow row wrap;
+        form
+            max-width vh(450); width 100%;
+            button
+                display block; margin 20px 0 0 auto; text-align right; padding 10px 40px; background $verde; font-size 18px; 
+                text-transform uppercase; color #fff; border-radius 10px
+                &:disabled
+                    opacity 0.4
+            .group
+                border-bottom 1px solid rgba($cinza, 0.5); position relative; margin-bottom 10px
+                label
+                    font-size vh(18); position absolute; top vh(20); left vh(30); transition all 0.5s ease
+                    color $cinza
+                input, textarea
+                    border 0; background transparent; font-size vh(18); padding vh(20) vh(30); width 100%
+                    outline 0; color $cinza
+                    &.notEmpty + label
+                        top vh(0); font-size rem(12); left vh(20)
+                textarea
+                    resize: none; height vh(150)
+                input:focus + label, textarea:focus + label
+                    top vh(0); font-size rem(12); left vh(20)
+                span
+                    position absolute; font-size rem(12); color $vermelho; right 0; bottom -17px; opacity 0;
+                &.error
+                    border-bottom 1px solid $vermelho;
+                    span
+                        opacity 1
+                    label
+                        color $vermelho
+        .infos
+            h4
+                color $vermelho; font-weight $font-regular; font-size rem(18); text-transform uppercase;
+                &:not(:first-child)
+                    margin-top 10px
+            a, p
+                text-decoration: none; color $cinza; display flex; align-items center; gap 10px; 
+                span
+                    font-size rem(14); line-height rem(24)
+            .telefone
+                margin-bottom 7px
+    
++mobile-600()
+    #contato
+        h2
+            margin-bottom 30px
+        .container
+            gap 50px
+            form
+                order 2
+            .infos
+                order 1

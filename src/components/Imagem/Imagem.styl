@@ -1,0 +1,9 @@
+// Imagem
+
+#imagem
+    overflow hidden; height vh(390); position relative; background url('~@images/mini-banner.jpg');
+    background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;
+    &:before
+        content ''; background rgba($cinza, 0.4); position absolute; top 0; left 0; right 0; bottom 0
+    img
+        display block; object-fit cover; width 100%; height 100%; object-position center

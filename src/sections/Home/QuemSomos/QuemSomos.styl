@@ -1,0 +1,38 @@
+// Quem somos
+
+#quemSomos
+    padding 70px 20px
+    h2
+        margin-bottom vh(0)
+    .texto
+        color $cinza; font-size vh(18); line-height vh(30); letter-spacing letterSpacing(10);
+        text-align center; max-width vh(1045); margin vh(30) auto vh(50)
+    .cards
+        display flex; align-items center; justify-content center; gap vh(30); flex-flow row wrap;
+        .card
+            width vh(390); height vh(390); border-radius 10px; overflow hidden
+            h3, p
+                color #fff;
+            .flip
+                transform-style: preserve-3d; transition all 1s ease; border-radius 10px;
+                cursor pointer; position relative; width 100%; height 100%;
+                .front
+                    width 100%; height 100%;display flex; align-items center; justify-content center;
+                    position absolute; top 0; left 0; z-index 1; transform-style: preserve-3d;
+                    background $vermelho; border-radius 10px;
+                    h3
+                        font-size vh(30); text-transform uppercase; letter-spacing letterSpacing(-50);
+                        font-weight $font-regular
+                .back
+                    width 100%; height 100%; display flex; align-items center; justify-content center;
+                    position absolute; top 0; left 0; z-index 1; transform: rotateY(180deg); padding 20px;
+                    transform-style: preserve-3d; background $vermelho; border-radius 10px;
+                    p
+                        font-size vh(18); line-height vh(32)
+            &:hover, &.ativo
+                .flip
+                    transform: rotateY(180deg);
+                    .frente
+                        z-index 0;
+                    .tras
+                        z-index 1;
