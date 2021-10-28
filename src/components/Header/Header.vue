@@ -1,10 +1,11 @@
 <template lang="pug">
     #header(:class="{'ativo': menuAtivo}")
-        h1 Soma e Edifique | Engenharia Elétrica e Civil
-            img(:src="require('@images/logo.png')")
-        button(@click="toggleMenu()").menu
-            i.first
-            i.second
+        .mobile
+            h1 Soma e Edifique | Engenharia Elétrica e Civil
+                img(:src="require('@images/logo.png')")
+            button(@click="toggleMenu()").menu
+                i.first
+                i.second
         ul.nav
             li
                 button(@click="scrollTo('#banner')") Home
@@ -14,6 +15,13 @@
                 button(@click="scrollTo('#quemSomos')") Quem Somos
             li
                 button(@click="scrollTo('#contato')") Contato
+        ul.redes
+            li(@click="fecharMenu()")
+                a(href="#")
+                    img(:src="require('@images/facebook.png')")
+            li(@click="fecharMenu()")
+                a(href="#")
+                    img(:src="require('@images/instagram.png')")
 </template>
 
 <script>

@@ -7,6 +7,7 @@
         QuemSomos
         Contato
         Footer
+        Whatsapp
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import Contato from '@sections/Home/Contato/Contato'
 import Header from '@components/Header/Header'
 import Imagem from '@components/Imagem/Imagem'
 import Footer from '@components/Footer/Footer'
+import Whatsapp from '@components/Whatsapp/Whatsapp'
 
 export default {
     name: "view-home",
@@ -27,7 +29,8 @@ export default {
         Imagem,
         QuemSomos,
         Contato,
-        Footer
+        Footer,
+        Whatsapp
     }
 }
 </script>
