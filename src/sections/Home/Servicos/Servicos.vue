@@ -17,48 +17,54 @@ export default {
         return {
             servicos: [
                 {
-                    titulo: 'Vistorias e Laudos Técnicos',
+                    titulo: 'Projetos',
                     items: [
-                        "Laudo Elétrico;",
-                        "Laudo Civil;",
-                        "Laudo Pericial;",
-                        "AVCB (Auto de Vistoria do Corpo de Bombeiros);",
-                        "CLCB (Certificado de Licença do Corpo de Bombeiroas);",
-                        "ART (Anotação de Responsabilidade Técnica).",
+                        "Projeto de Edificações;",
+                        "Projeto de Arquitetura;",
+                        "Projeto de ventilação e ar condicionado;",
+                        "Projeto Elétrico;",
+                        "Projeto de tubulações.",
                     ]
                 },
                 {
-                    titulo: 'Manutenção Elétrica',
+                    titulo: 'Construção Civil',
                     items: [
-                        "Reformas em quadros de energia e padrões;",
-                        "Reparos e instalação de todo sistema elétrico;",
-                        "SPDA (Sistema de Proteção Contra Descargas Atmosféricas). Para raios, vistorias e certificações.",
+                        "Fundações;",
+                        "Pavimentação;",
+                        "Estrutura de Concreto;",
+                        "Estrutura Metálica;",
+                        "Instalação elétrica;",
+                        "Instalação hidrossanitária;",
+                        "Instalação hidráulica e de reuso;",
+                        "Acabamento depisos, paedes, forros, tetos, esquadrias, fachadas, etc...;",
+                        "Reformas em residências, condomínios, comércios e industrias;",
                     ]
                 },
                 {
-                    titulo: 'Manutenção Hidráulica',
+                    titulo: 'Gestão de Obras',
                     items: [
-                        "Limpeza de reservatório de água;",
-                        "Individualização de água;",
-                        "Reparo em vazamentos;",
-                        "Impermeabilizações;",
-                        "Instalações hidrossanitárias;",
-                        "Tubulações de águas quente e fria;",
-                        "Projetos hidráulicos.",
+                        "Estudo de viabilidade;",
+                        "Orçamento;",
+                        "Estudo Temporal;",
+                        "Certidões iniciais;",
+                        "Preparação de canteiros;",
+                        "Desenvolvimento de cronograma de construção;",
+                        "Gerenciamento logístico e operacional;",
+                        "Administração diária de obras.",
                     ]
                 },
-                {
-                    titulo: 'Pintura e Alvenaria',
-                    items: [
-                        "Pintura em geral;",
-                        "Construção de fundações;",
-                        "Instalação de contrapisos;",
-                        "Construção de paredes e muros;",
-                        "Instalação de revestimentos (todos os tipos);",
-                        "Acabamentos em massa (reboco, fina e textura);",
-                        "Planejamento e execução de obras e reformas.",
-                    ]
-                },
+                // {
+                //     titulo: 'Pintura e Alvenaria',
+                //     items: [
+                //         "Pintura em geral;",
+                //         "Construção de fundações;",
+                //         "Instalação de contrapisos;",
+                //         "Construção de paredes e muros;",
+                //         "Instalação de revestimentos (todos os tipos);",
+                //         "Acabamentos em massa (reboco, fina e textura);",
+                //         "Planejamento e execução de obras e reformas.",
+                //     ]
+                // },
             ]
         }
     }

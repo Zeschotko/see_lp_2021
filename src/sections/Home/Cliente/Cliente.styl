@@ -1,0 +1,14 @@
+// Cliente
+
+#cliente
+    padding vh(70) 20px
+    ul
+        display flex; align-items center; justify-content center; gap vh(70); max-width vh(750); width 100%; margin 0 auto
+        flex-flow row wrap
+        li
+            flex-shrink: 0
+            img
+                max-width 200px; max-height 70px; filter grayscale(100%); transition  all 0.5s ease-in-out
+            &:hover
+                img
+                    filter grayscale(0%)

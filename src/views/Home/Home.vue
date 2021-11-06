@@ -5,6 +5,7 @@
         Servicos
         Imagem
         QuemSomos
+        Cliente
         Contato
         Footer
         Whatsapp
@@ -14,6 +15,7 @@
 import Banner from '@sections/Home/Banner/Banner'
 import Servicos from '@sections/Home/Servicos/Servicos'
 import QuemSomos from '@sections/Home/QuemSomos/QuemSomos'
+import Cliente from '@sections/Home/Cliente/Cliente'
 import Contato from '@sections/Home/Contato/Contato'
 import Header from '@components/Header/Header'
 import Imagem from '@components/Imagem/Imagem'
@@ -28,6 +30,7 @@ export default {
         Servicos,
         Imagem,
         QuemSomos,
+        Cliente,
         Contato,
         Footer,
         Whatsapp

@@ -4,9 +4,9 @@
         p.texto
             |Somos o resultado da fusão de duas grandes empresas na área da construção civil: Soma Service Fire e Edifique Planejamento e Construção.
             br
-            |Atuamos no setor da construção civil, com pequenas, médias e grandes obras. Trabalhamos com todos os públicos, sejam eles: Empresas, indústrias ou residências.
+            |Atuamos há mais de 20 anos no setor da construção civil, com pequenas, médias e grandes obras. Trabalhamos com todos os públicos, sejam eles: Empresas, indústrias ou residências.
             br
-            |Realizamos  gerenciamento de obras, desde o projeto até a construção de novas edificações.
+            |Realizamos gerenciamento de obras, desde o projeto até a construção de novas edificações.
             br
             |Confeccionamos laudos para o corpo de bombeiros, laudos civis, elétricos e vistorias técnicas.
         ul.cards
