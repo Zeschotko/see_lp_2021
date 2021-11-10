@@ -53,18 +53,14 @@ export default {
                         "Administração diária de obras.",
                     ]
                 },
-                // {
-                //     titulo: 'Pintura e Alvenaria',
-                //     items: [
-                //         "Pintura em geral;",
-                //         "Construção de fundações;",
-                //         "Instalação de contrapisos;",
-                //         "Construção de paredes e muros;",
-                //         "Instalação de revestimentos (todos os tipos);",
-                //         "Acabamentos em massa (reboco, fina e textura);",
-                //         "Planejamento e execução de obras e reformas.",
-                //     ]
-                // },
+                {
+                    titulo: 'Laudos e Vistorias',
+                    items: [
+                        "AVCB (Auto de Vistoria do Corpo de Bombeiros);",
+                        "CLCB (Certificado de Licença do Corpo de Bombeiroas);",
+                        "ART (Anotação de Responsabilidade Técnica)."
+                    ]
+                },
             ]
         }
     }
