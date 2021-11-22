@@ -1,5 +1,5 @@
 <template lang="pug">
-    a(href="https://wa.me/11991521367", target="_blank")#whatsapp
+    a(href="https://wa.me/5511949745230", target="_blank")#whatsapp
         img(:src="require('@images/whatsHeader.png')")
 </template>
 

@@ -22,12 +22,12 @@
                 button(type="submit", v-html="textButton", ref="btnEnviar")
             .infos
                 h4 Telefone e Whatsapp
-                a(href="https://wa.me/11991521367", target="_blank").telefone
+                a(href="https://wa.me/5511991521367", target="_blank").telefone
                     img(:src="require('@images/icons/whatsapp.png')")
-                    span (11) 99152-1367 - Projetos, Laudos Civis, Obras e Reformas
-                a(href="https://wa.me/11949745230", target="_blank")
+                    span (11) 99152-1367 - Projetos, Laudos Civis, AVCB e CLCB, Obras e Reformas
+                a(href="https://wa.me/5511949745230", target="_blank")
                     img(:src="require('@images/icons/whatsapp.png')")
-                    span (11) 94974-5230 - Elétrica, Laudos de Elétrica e Para Raios
+                    span (11) 94974-5230 - Elétrica, Sistemas Fotovoltaico, Laudos de Elétrica e Para Raios
                 h4 E-mail
                 a(href="mailto:contato@somaedifique.com.br")
                     img(:src="require('@images/icons/mail.png')")
