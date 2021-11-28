@@ -23,7 +23,8 @@ export default {
                         "Projeto de Arquitetura;",
                         "Projeto de ventilação e ar condicionado;",
                         "Projeto Elétrico;",
-                        "Projeto de tubulações.",
+                        "Projeto de tubulações;",
+                        "Projeto Fotovoltaico."
                     ]
                 },
                 {
